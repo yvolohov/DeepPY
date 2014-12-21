@@ -17,6 +17,15 @@ def variables():
     _four = 'some value'
     print('{}, {}, {}, {}'.format(_v1, _2, v3, _four))
 
+def codeLines():
+    a = 1; b = 2; c = 3
+    # symbol ; used as divider between operations on single line
+    print(a + b + c)
+    s = 'very long ' \
+        'string'
+    # one operation on several lines
+    print(s)
+
 # helloWorld()
 # helpFunction()
 # formatFunction()

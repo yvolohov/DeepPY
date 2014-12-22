@@ -1,32 +1,51 @@
+from random import randint
 
-# single-line comment
-def helloWorld():
-    print('Hello world !!!')
+import first
 
-def helpFunction():
-    help('print')
+def operatorsDiv():
+    pow = 3 ** 3 # 27
+    print('pow', pow)
 
-def formatFunction():
-    print('My name is {0} {1}'.format('Yaroslav', 'Volohov'))
-    # 0 and 1 is order number of format() function arguments
+    div1 = 7 / 3
+    print('div1 {}'.format(div1))
 
-def variables():
-    _v1 = 1
-    _2 = 2.233
-    v3 = 3.0E-2
-    _four = 'some value'
-    print('{}, {}, {}, {}'.format(_v1, _2, v3, _four))
+    div2 = 7 // 3
+    print('div2 {}'.format(div2))
 
-def codeLines():
-    a = 1; b = 2; c = 3
-    # symbol ; used as divider between operations on single line
-    print(a + b + c)
-    s = 'very long ' \
-        'string'
-    # one operation on several lines
-    print(s)
+    div3 = 7 % 3
+    print('div3 {}'.format(div3))
 
-# helloWorld()
-# helpFunction()
-# formatFunction()
-variables()
+
+def operatorIn():
+    arr1 = [3, 4, 5, 6, 7]
+    print(2 in arr1)
+    print(6 in arr1)
+    print(2 not in arr1)
+    print(6 not in arr1)
+
+def operatorIf():
+    num = randint(0, 2)
+
+    if num == 0:
+        print('zero')
+    elif num == 1:
+        print('one')
+    else:
+        print('two')
+
+def operatorWhile():
+    counter = 0
+    num = randint(10, 50)
+    stars = '';
+
+    while counter < num:
+        stars += '*'
+        counter += 1
+
+    print(stars)
+
+
+# operatorsDiv()
+# operatorIn()
+# operatorIf()
+operatorWhile()

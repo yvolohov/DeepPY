@@ -1,5 +1,5 @@
 __author__ = 'yvolohov'
 
-class Parent:
+class Parent():
     def __str__(self):
         return 'Parent'

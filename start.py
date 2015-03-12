@@ -1,22 +1,12 @@
 import sys
 
 if len(sys.argv) < 2:
-    print 0
+    print('')
     exit()
 
-count = int(sys.argv[1])
+st = sys.argv[1]
+st = st.replace(' ', '')
+st = st.upper()
 
-def fibo(count):
-        first = 0
-        second = 1
-        current = 0
-
-        for i in range(count):
-            current = first + second
-            first = second
-            second = current
-
-        print current
-
-fibo(10)
+print(st)
 

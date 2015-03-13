@@ -1,1 +1,1 @@
-import happy_ticket
+import clean_list

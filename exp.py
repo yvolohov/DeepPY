@@ -1,3 +1,5 @@
+# only for python version 2.x
+
 import sys
 import math
 
@@ -10,7 +12,7 @@ arg2 = float(sys.argv[2])
 arg3 = float(sys.argv[3])
 
 result1 = (1 / (arg3 * math.sqrt(2 * math.pi)))
-result2 = ((arg1 - arg2) ** 2) / (2 * (arg3**2))
-result = round(result1 * math.exp(-result2), 11)
+result2 = ((arg1 - arg2) ** 2) / (2 * (arg3 ** 2))
+result = result1 * math.exp(-result2)
 
 print(result)
